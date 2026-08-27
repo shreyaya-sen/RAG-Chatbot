@@ -1,0 +1,7 @@
+gradio
+pypdf
+langchain-text-splitters
+chromadb
+groq
+python-dotenv
+requests
