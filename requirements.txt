@@ -1,8 +1,0 @@
-gradio
-pypdf
-langchain-text-splitters
-langchain-huggingface
-chromadb
-sentence-transformers
-groq
-python-dotenv
