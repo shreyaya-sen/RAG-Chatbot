@@ -4,6 +4,7 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 import chromadb
 from groq import Groq
 from datetime import datetime
+from zoneinfo import ZoneInfo
 from dotenv import load_dotenv
 import os
 import requests
@@ -375,7 +376,9 @@ def get_upload_time(file):
 
         return ""
 
-    return datetime.now().strftime(
+    return datetime.now(
+        ZoneInfo("Asia/Kolkata")
+    ).strftime(
         "%I:%M %p"
     )
 
